@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Result</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  </head>
+  <script src="https://kit.fontawesome.com/7234580fe1.js" crossorigin="anonymous"></script>
+<style>
+  *{
+    padding:0px;
+    margin:0px;
+    box-sizing:border-box;
+    text-decoration:none;
+  }
+  hr{
+   border:1px solid grey;
+   opacity:0.2;
+   
+   
+ }
+ .results-title{
+   margin-bottom:9px;
+   width:100%;
+   height:47px;
+   background-color:#01463b;
+   color:white;
+   text-align:center;
+   padding-top:20px;
+   padding-left:10px;
+  font-size:22px;
+   font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+ }
+
+ .type-section{
+   width:100%;
+   height:48px;
+   background-color:#9fc6f9;
+   margin-top:16px;
+   color:black;
+   font-weight:bold;
+   display:flex;
+   align-items:center;
+   font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-size:14px;
+  padding-top:3px;
+ }
+ .box-1-section{
+    background-color: #ffffff;
+    width:100%;
+    height: 32px;
+    color: black;
+   
+    font-family: "Lato", sans-serif;
+   
+    font-size: 14px;
+    font-weight: bold;
+    display:flex;
+    align-items:center;
+  }
+  select{
+    background-color:#ffffff;
+    width:100%;
+    padding-left:14px;
+    border:none;
+    font-weight:300;
+    outline:none;
+    text-decoration:none;
+  }
+  .Program-section{
+    width:100%;
+    height:36px;
+    background-color:#9fc6f9;
+    color:black;
+   font-weight:bold;
+   
+   font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-size:14px;
+  padding-top:8px;
+  padding-left:1px;
+  }
+  .Batch-section{
+     width:100%;
+    height:37px;
+    background-color:#9fc6f9;
+    color:black;
+   font-weight:bold;
+   
+   font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-size:14px;
+  padding-top:8px;
+  padding-left:1px;
+  }
+  .rollno-section{
+       width:100%;
+    height:37px;
+    background-color:#9fc6f9;
+    color:black;
+   font-weight:bold;
+   
+   font-family: "Lato", sans-serif;
+  font-optical-sizing: auto;
+  font-size:14px;
+  padding-top:8px;
+  padding-left:1px;
+  }
+   .box-2-section {
+   
+   
+     font-family: "Lato", sans-serif;
+   width:100%;
+   height:32px;
+   background-color:red;
+   border:none;
+   }
+   input{
+     background-color:white;
+     color:black;
+     outline:none;
+     padding-left:14px;
+     width:100%;
+     height:32px;
+     border:none;
+   }
+   .container-section{
+     width:100%;
+     height:155px;
+     background-color:#9fc6f9;
+   }
+   .filter-section{
+     width:76px;
+     height:36px;
+     background-color:#00a65a;
+     border-radius:4px;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     font-family: "Lato", sans-serif;
+     color:white;
+     font-size:14px;
+    
+   }
+   i{
+     color:white;
+     font-size:14px;
+     
+   }
+   .filter-text{
+     font-size:14px;
+     margin-left:4px;
+   }
+   .filter-logo{
+     background-color:transparent;
+     width:14px;
+     overflow:hidden;
+     background-size:contain;
+   }
+   .pdf-section{
+     width:71px;
+     height:34px;
+     background-color:#f39c12;
+     border-radius:4px;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     font-family: "Lato", sans-serif;
+     color:white;
+     font-size:14px;
+     margin-top:4px;
+    
+   }
+
+   .pdf-text{
+     font-size:14px;
+     margin-left:4px;
+   }
+   .pdf-logo{
+     background-color:transparent;
+     width:14px;
+     overflow:hidden;
+     background-size:contain;
+   }
+   .grade-section{
+     width:122px;
+     height:34px;
+     background-color:#00c0ef;
+     border-radius:4px;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     font-family: "Lato", sans-serif;
+     color:white;
+     font-size:14px;
+     margin-top:4px;
+    
+   }
+
+   .grade-text{
+     font-size:14px;
+     margin-left:4px;
+   }
+   .grade-logo{
+     background-color:transparent;
+     width:14px;
+     overflow:hidden;
+     background-size:contain;
+   }
+   .merit-section{
+     width:158px;
+     height:34px;
+     background-color:#dd4b39;
+     border-radius:4px;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     font-family: "Lato", sans-serif;
+     color:white;
+     font-size:14px;
+     margin-top:4px;
+     margin-left:26px;
+    
+   }
+
+   .merit-text{
+     font-size:14px;
+     margin-left:4px;
+   }
+   .merit-logo{
+     background-color:transparent;
+     width:14px;
+     overflow:hidden;
+     background-size:contain;
+   }
+   .notice-section{
+     width:100%;
+     height:29px;
+     background-color:green;
+     color:white;
+     margin-top:10px;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     font-weight:bold;
+      font-family: "Lato", sans-serif;
+      font-size:19px;
+   }
+   .footer-container{
+     width:462px;
+     height:320px;
+     border:2px solid black;
+     margin-top:16px;
+     margin-left:26px;
+   }
+   .image-section{
+     width:124px;
+     height:104px;
+     background-color:transparent;
+     margin-top:28px;
+     margin-left:168px;
+     display:flex;
+     align-items:center;
+     justify-content:center;
+     
+   }
+   img{
+     width:100px;
+   }
+   .uni-title{
+     width:100%;
+     height:40px;
+     background-color:transparent;
+     margin-top:18px;
+     font-size:28px;
+      font-family: "Lato", sans-serif;
+      text-align:center;
+      align-items:center;
+      font-weight:bold;
+      letter-spacing:1px;
+      
+     
+   }
+   .uni-address{
+     width:340px;
+     height:60px;
+     background-color:transparent;
+     font-size:22px;
+      font-family: "Lato", sans-serif;
+      margin-left:62px;
+      margin-top:14px;
+      align-items:center;
+      text-align:center;
+   }
+   .uni-down{
+     width:100%;
+     height:36px;
+     background-color:transparent;
+     margin-top:10px;
+     font-size:28px;
+      font-family: "Lato", sans-serif;
+      font-weight:bold;
+      text-align:center;
+      align-items:center;
+      margin-top:14px;
+      
+      
+   }
+</style>
+<body>
+  <div class="results-title">Results</div>
+ <hr>
+ <div class="type-section">
+   Type:
+ </div>
+   <div class="box-1-section">
+      <select name="hwllow" id="hwllow">
+       <option value="hwllow">Type</option>
+       <option value="hwllow">Regular</option>
+       <option value="hwllow">Back</option>
+       <option value="hwllow">Improvement</option>
+       <option value="hwllow">Special</option>
+       <option value="hwllow">Re Back</option>
+     </select>
+   </div>
+   <div class="Program-section">
+     Program:
+   </div> 
+   <div class="box-1-section">
+      <select name="hwllow" id="hwllow">
+       <option value="hwllow">Program</option>
+       <option value="hwllow">UG</option>
+       <option value="hwllow">PG</option>
+     </select>
+   </div>
+   <div class="Batch-section">
+     Batch:
+   </div>
+    <div class="box-1-section">
+       <select name="hwllow" id="hwllow">
+        <option value="hwllow">Select Batch</option>
+        <option value="hwllow">2016-19</option>
+        <option value="hwllow">2017-20</option>
+        <option value="hwllow">2018-21</option>
+        <option value="hwllow">2019-22</option>
+        <option value="hwllow">2020-23</option>
+        <option value="hwllow">2021-24</option>
+        <option value="hwllow">2022-25</option>
+   
+      </select>
+    </div>
+  <div class="Batch-section">
+    Sem:
+  </div>  
+   <div class="box-1-section">
+     <select name="hwllow" id="hwllow">
+       <option value="hwllow">Select Semester</option>
+       <option value="hwllow">1ST</option>
+       <option value="hwllow">2ND</option>
+     </select>
+   </div>
+    <div class="rollno-section">
+      Student Roll No:
+    </div>
+    
+     <div class="box-2-section">
+       <div class="semester-title">
+        
+       </div> <input type="text" id="inproll" placeholder="Student Roll No"autofocus>
+     </div>
+     
+     <div class="container-section">
+         <div class="filter-section"onclick="func()">
+            <div class="filter-logo"><i class="fa-solid fa-filter"></i></div>
+            <div class="filter-text">Filter</div>
+              
+            
+         </div>
+         <div class="pdf-section"onclick="func()">
+            <div class="pdf-logo"><i class="fa-regular fa-file"></i></div>
+            <div class="pdf-text">PDF</div>
+              
+            
+         </div>
+         <div class="grade-section"onclick="func()">
+            <div class="grade-logo"><i class="fa-regular fa-file"></i></div>
+            <div class="grade-text">Grade Sheet</div>
+              
+            
+         </div>
+         <div class="merit-section"onclick="func()">
+            <div class="merit-logo"><i class="fa-regular fa-file"></i></div>
+            <div class="merit-text">Merit List 2019-22</div>
+              
+            
+         </div>
+     </div>
+     
+     
+     <div class="notice-section">
+       <marquee behavior="" direction="">
+         Students are required to approach their respective Principals to collect the signed copy of detailed final +3 mark/grade sheets and use the same for the purpose of admission into PG courses.
+       </marquee>
+     </div>
+    <div class="footer-container">
+      <div class="image-section"> <img src="/UUC.png" alt="/UUC.png"></div>
+      <div class="uni-title">
+        Berhampur University
+      </div>
+      <div class="uni-address">
+        BHANJA BIHAR ,BERHAMPUR - 760007(ODISHA)
+      </div>
+      <div class="uni-down">
+        DOWNLOAD MARK / GRADE SHEET
+      </div>  
+     
+    </div> 
+    <script>
+    const inputroll = document.getElementById('inproll');
+    
+      function func(){
+        if(inputroll.value=="GN2222592"){
+          // alert("You are Bikash Mahanandia");
+          window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }else if(inputroll.value=="GN2222593"){
+          // alert("You are Bikash Sabar");
+          window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+          
+        }
+        else if(inputroll.value=="GN2222594"){
+          // alert("You are Binod Sabar");
+         window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222595"){
+          // alert("You are Chittaranjan Sabar");
+         window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222596"){
+          // alert("You are Deepak Pandit");
+          window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222597"){
+          // alert("You are Navya ");
+         window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222598"){
+          // alert("You are Kanduru Jayram");
+        window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222599"){
+          // alert("You are Ravi ");
+         window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222600"){
+          // alert("You are swati ");
+         window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222602"){
+          // alert("You are Monalisa Patro");
+         window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222603"){
+          // alert("You are Priyanka Bidika");
+          window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222604"){
+          // alert("You are Jhansi Rani");
+         window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222605"){
+          // alert("You are sitano karjee");
+          window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222606"){
+          // alert("You are Tara ");
+          window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        else if(inputroll.value=="GN2222607"){
+          // alert("You are Udit garadia");
+          window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }else{
+          // alert("unknown");
+          
+         window.open("https://vikashartist.github.io/https-berhampuruniversity.silicontechlab.com-buerp-build-examination-mark_sheet.php/");
+        }
+        // console.log(inputroll.value);
+      }
+    </script>
+</body>
+</html>
